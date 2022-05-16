@@ -1,11 +1,14 @@
 #include <iostream>
 #include <cstring>
-#define FIRST_SYMBOL 0
+
 using namespace std;
+
 class mstring{
     char * m_string;
     void step_right(int,int);
     void step_left(int,int);
+    
+    enum{FIRST_SYMBOL = 0};
 public:
     mstring();
     mstring(const mstring & new_str);
